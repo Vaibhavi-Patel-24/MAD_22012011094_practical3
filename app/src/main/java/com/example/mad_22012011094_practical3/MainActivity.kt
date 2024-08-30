@@ -18,15 +18,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val loginButton = findViewById<Button>(R.id.login_button)
-        loginButton.setOnClickListener{
-        val  intent = Intent(this,LoginActivity::class.java)
-            .putExtra("username","vaibhavi")
-            .putExtra("password","123")
-                .also {
-                    startActivity(intent)
-                }
 
-        }
     }
 }
