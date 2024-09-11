@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
                     startActivity(it)
                 }
         }
-            fun implicitIntent(){
+        implicitIntent()
+    }
+             fun implicitIntent(){
             findViewById<Button>(R.id.browse_button).setOnClickListener {
                 Intent(Intent.ACTION_VIEW,Uri.parse("https://www.google.com")).also { startActivity(it) }
             }
@@ -64,10 +66,9 @@ class MainActivity : AppCompatActivity() {
                  findViewById<Button>(R.id.alarm_button).setOnClickListener {
                      Intent(AlarmClock.ACTION_SHOW_ALARMS).also{
                          startActivity(it)
-                 }
+                     }
                  }
 
 
             }
     }
-}
